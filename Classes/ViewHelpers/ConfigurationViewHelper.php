@@ -1,6 +1,6 @@
 <?php
 
-namespace Ecodev\Newsletter\ViewHelpers;
+namespace Mirko\Newsletter\ViewHelpers;
 
 /**
  * Makes an array of configuration available in JavaScript

@@ -1,10 +1,10 @@
 <?php
 
-namespace Ecodev\Newsletter\Tests\Unit\Controller;
+namespace Mirko\Newsletter\Tests\Unit\Controller;
 
-use Ecodev\Newsletter\Controller\BounceAccountController;
-use Ecodev\Newsletter\Domain\Repository\BounceAccountRepository;
-use Ecodev\Newsletter\MVC\View\ExtDirectView;
+use Mirko\Newsletter\Controller\BounceAccountController;
+use Mirko\Newsletter\Domain\Repository\BounceAccountRepository;
+use Mirko\Newsletter\MVC\View\ExtDirectView;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 /**

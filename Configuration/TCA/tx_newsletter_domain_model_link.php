@@ -2,9 +2,9 @@
 
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_link',
+        'title' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_link',
         'label' => 'url',
-        'iconfile' => 'EXT:newsletter/Resources/Public/Icons/tx_newsletter_domain_model_link.svg',
+        'iconfile' => 'EXT:typo3_newsletter/Resources/Public/Icons/tx_newsletter_domain_model_link.svg',
     ],
     'interface' => [
         'showRecordFieldList' => 'url,opened_count,newsletter',
@@ -17,7 +17,7 @@ return [
     ],
     'columns' => [
         'url' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_link.url',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_link.url',
             'config' => [
                 'type' => 'input',
                 'size' => 40,
@@ -26,7 +26,7 @@ return [
             ],
         ],
         'opened_count' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_link.opened_count',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_link.opened_count',
             'config' => [
                 'type' => 'input',
                 'size' => 4,
@@ -35,7 +35,7 @@ return [
             ],
         ],
         'newsletter' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_link.newsletter',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_link.newsletter',
             'config' => [
                 'readOnly' => true,
                 'type' => 'inline',

@@ -1,11 +1,11 @@
 <?php
 
-namespace Ecodev\Newsletter\Tests\Unit;
+namespace Mirko\Newsletter\Tests\Unit;
 
-use Ecodev\Newsletter\Tools;
+use Mirko\Newsletter\Tools;
 
 /**
- * Unit test for \Ecodev\Newsletter\Tools
+ * Unit test for \Mirko\Newsletter\Tools
  */
 class ToolsTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {

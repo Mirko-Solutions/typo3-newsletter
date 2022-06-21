@@ -2,7 +2,7 @@
 
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_bounceaccount',
+        'title' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_bounceaccount',
         'label' => 'email',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -10,7 +10,7 @@ return [
         'enablecolumns' => [
             'disabled' => 'hidden',
         ],
-        'iconfile' => 'EXT:newsletter/Resources/Public/Icons/tx_newsletter_domain_model_bounceaccount.svg',
+        'iconfile' => 'EXT:typo3_newsletter/Resources/Public/Icons/tx_newsletter_domain_model_bounceaccount.svg',
     ],
     'interface' => [
         'showRecordFieldList' => 'email,server,protocol,port,username,password',
@@ -30,7 +30,7 @@ return [
             ],
         ],
         'email' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_bounceaccount.email',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_bounceaccount.email',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -38,7 +38,7 @@ return [
             ],
         ],
         'server' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_bounceaccount.server',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_bounceaccount.server',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -46,7 +46,7 @@ return [
             ],
         ],
         'protocol' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_bounceaccount.protocol',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_bounceaccount.protocol',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -57,7 +57,7 @@ return [
             ],
         ],
         'port' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_bounceaccount.port',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_bounceaccount.port',
             'config' => [
                 'type' => 'input',
                 'size' => 5,
@@ -65,7 +65,7 @@ return [
             ],
         ],
         'username' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_bounceaccount.username',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_bounceaccount.username',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -73,20 +73,20 @@ return [
             ],
         ],
         'password' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_bounceaccount.password',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_bounceaccount.password',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => \Ecodev\Newsletter\Tca\BounceAccountTca::class,
+                'eval' => \Mirko\Newsletter\Tca\BounceAccountTca::class,
             ],
         ],
         'config' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_bounceaccount.config',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_bounceaccount.config',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
                 'rows' => 8,
-                'eval' => \Ecodev\Newsletter\Tca\BounceAccountTca::class,
+                'eval' => \Mirko\Newsletter\Tca\BounceAccountTca::class,
                 'wrap' => 'off',
                 'default' => "poll ###SERVER###\nproto ###PROTOCOL### \nport ###PORT###\nusername \"###USERNAME###\"\npassword \"###PASSWORD###\"\n",
             ],

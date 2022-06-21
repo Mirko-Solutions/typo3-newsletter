@@ -2,7 +2,7 @@
 
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist',
+        'title' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist',
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -10,7 +10,7 @@ return [
         'enablecolumns' => [
             'disabled' => 'hidden',
         ],
-        'iconfile' => 'EXT:newsletter/Resources/Public/Icons/tx_newsletter_domain_model_recipientlist.svg',
+        'iconfile' => 'EXT:typo3_newsletter/Resources/Public/Icons/tx_newsletter_domain_model_recipientlist.svg',
         'type' => 'type', // this tells extbase to respect the "type" column for Single Table Inheritance
     ],
     'interface' => [
@@ -27,7 +27,7 @@ return [
             ],
         ],
         'title' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.title',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.title',
             'config' => [
                 'type' => 'input',
                 'size' => '30',
@@ -35,7 +35,7 @@ return [
             ],
         ],
         'plain_only' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.plain_only',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.plain_only',
             'config' => [
                 'type' => 'check',
                 'default' => '0',
@@ -56,7 +56,7 @@ return [
             ],
         ],
         'be_users' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.be_users',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.be_users',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
@@ -68,7 +68,7 @@ return [
             ],
         ],
         'fe_groups' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.fe_groups',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.fe_groups',
             'config' => [
                 'type' => 'group',
                 'internal_type' => 'db',
@@ -79,7 +79,7 @@ return [
             ],
         ],
         'fe_pages' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.fe_pages',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.fe_pages',
             'config' => [
                 'type' => 'group',
                 'internal_type' => 'db',
@@ -90,7 +90,7 @@ return [
             ],
         ],
         'sql_statement' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.sql_statement',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.sql_statement',
             'config' => [
                 'type' => 'text',
                 'cols' => '50',
@@ -98,7 +98,7 @@ return [
             ],
         ],
         'sql_register_bounce' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.sql_register_bounce',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.sql_register_bounce',
             'config' => [
                 'type' => 'text',
                 'cols' => '50',
@@ -106,7 +106,7 @@ return [
             ],
         ],
         'sql_register_open' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.sql_register_open',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.sql_register_open',
             'config' => [
                 'type' => 'text',
                 'cols' => '50',
@@ -114,7 +114,7 @@ return [
             ],
         ],
         'sql_register_click' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.sql_register_click',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.sql_register_click',
             'config' => [
                 'type' => 'text',
                 'cols' => '50',
@@ -122,21 +122,21 @@ return [
             ],
         ],
         'csv_separator' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.csv_separator',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.csv_separator',
             'config' => [
                 'type' => 'input',
                 'size' => 1,
             ],
         ],
         'csv_fields' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.csv_fields',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.csv_fields',
             'config' => [
                 'type' => 'input',
                 'size' => 20,
             ],
         ],
         'csv_values' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.csv_values',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.csv_values',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -144,7 +144,7 @@ return [
             ],
         ],
         'csv_filename' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.csv_file',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.csv_file',
             'config' => [
                 'type' => 'group',
                 'internal_type' => 'file',
@@ -157,33 +157,33 @@ return [
             ],
         ],
         'csv_url' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.csv_url',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.csv_url',
             'config' => [
                 'type' => 'input',
                 'size' => 20,
             ],
         ],
         'type' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type_be_users', \Ecodev\Newsletter\Domain\Model\RecipientList\BeUsers::class],
-                    ['LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type_fe_groups', \Ecodev\Newsletter\Domain\Model\RecipientList\FeGroups::class],
-                    ['LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type_fe_pages', \Ecodev\Newsletter\Domain\Model\RecipientList\FePages::class],
-                    ['LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type_sql', \Ecodev\Newsletter\Domain\Model\RecipientList\Sql::class],
-                    ['LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type_csv_file', \Ecodev\Newsletter\Domain\Model\RecipientList\CsvFile::class],
-                    ['LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type_csv_list', \Ecodev\Newsletter\Domain\Model\RecipientList\CsvList::class],
-                    ['LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type_csv_url', \Ecodev\Newsletter\Domain\Model\RecipientList\CsvUrl::class],
-                    ['LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type_html', \Ecodev\Newsletter\Domain\Model\RecipientList\Html::class],
+                    ['LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type_be_users', \Mirko\Newsletter\Domain\Model\RecipientList\BeUsers::class],
+                    ['LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type_fe_groups', \Mirko\Newsletter\Domain\Model\RecipientList\FeGroups::class],
+                    ['LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type_fe_pages', \Mirko\Newsletter\Domain\Model\RecipientList\FePages::class],
+                    ['LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type_sql', \Mirko\Newsletter\Domain\Model\RecipientList\Sql::class],
+                    ['LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type_csv_file', \Mirko\Newsletter\Domain\Model\RecipientList\CsvFile::class],
+                    ['LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type_csv_list', \Mirko\Newsletter\Domain\Model\RecipientList\CsvList::class],
+                    ['LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type_csv_url', \Mirko\Newsletter\Domain\Model\RecipientList\CsvUrl::class],
+                    ['LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.type_html', \Mirko\Newsletter\Domain\Model\RecipientList\Html::class],
                 ],
                 'maxitems' => 1,
-                'default' => \Ecodev\Newsletter\Domain\Model\RecipientList\Sql::class,
+                'default' => \Mirko\Newsletter\Domain\Model\RecipientList\Sql::class,
             ],
         ],
         'html_url' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.html_url',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.html_url',
             'config' => [
                 'type' => 'input',
                 'size' => 20,
@@ -191,20 +191,20 @@ return [
             ],
         ],
         'html_fetch_type' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.html_fetch_type',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.html_fetch_type',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.html_fetch_type_mailto', 'mailto'],
-                    ['LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.html_fetch_type_regex', 'regex'],
+                    ['LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.html_fetch_type_mailto', 'mailto'],
+                    ['LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_recipientlist.html_fetch_type_regex', 'regex'],
                 ],
                 'size' => 1,
                 'maxitems' => 1,
             ],
         ],
         'recipients_preview' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang.xlf:preview',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang.xlf:preview',
             'config' => [
                 'type' => 'user',
                 'userFunc' => 'Ecodev\\Newsletter\Tca\\RecipientListTca->render',
@@ -213,14 +213,14 @@ return [
     ],
     'types' => [
         '0' => ['showitem' => 'hidden;;1, title, type'],
-        \Ecodev\Newsletter\Domain\Model\RecipientList\BeUsers::class => ['showitem' => 'hidden;;1, title, plain_only, lang, type, be_users, recipients_preview'],
-        \Ecodev\Newsletter\Domain\Model\RecipientList\FeGroups::class => ['showitem' => 'hidden;;1, title, plain_only, lang, type, fe_groups, recipients_preview'],
-        \Ecodev\Newsletter\Domain\Model\RecipientList\FePages::class => ['showitem' => 'hidden;;1, title, plain_only, lang, type, fe_pages, recipients_preview'],
-        \Ecodev\Newsletter\Domain\Model\RecipientList\Sql::class => ['showitem' => 'hidden;;1, title, plain_only, type, sql_statement, sql_register_bounce, sql_register_open, sql_register_click, recipients_preview'],
-        \Ecodev\Newsletter\Domain\Model\RecipientList\CsvFile::class => ['showitem' => 'hidden;;1, title, plain_only, type, csv_separator, csv_fields, csv_filename, recipients_preview'],
-        \Ecodev\Newsletter\Domain\Model\RecipientList\CsvList::class => ['showitem' => 'hidden;;1, title, plain_only, type, csv_separator, csv_fields, csv_values, recipients_preview'],
-        \Ecodev\Newsletter\Domain\Model\RecipientList\CsvUrl::class => ['showitem' => 'hidden;;1, title, plain_only, type, csv_separator, csv_fields, csv_url, recipients_preview'],
-        \Ecodev\Newsletter\Domain\Model\RecipientList\Html::class => ['showitem' => 'hidden;;1, title, plain_only, lang, type, html_url, html_fetch_type, recipients_preview'],
+        \Mirko\Newsletter\Domain\Model\RecipientList\BeUsers::class => ['showitem' => 'hidden;;1, title, plain_only, lang, type, be_users, recipients_preview'],
+        \Mirko\Newsletter\Domain\Model\RecipientList\FeGroups::class => ['showitem' => 'hidden;;1, title, plain_only, lang, type, fe_groups, recipients_preview'],
+        \Mirko\Newsletter\Domain\Model\RecipientList\FePages::class => ['showitem' => 'hidden;;1, title, plain_only, lang, type, fe_pages, recipients_preview'],
+        \Mirko\Newsletter\Domain\Model\RecipientList\Sql::class => ['showitem' => 'hidden;;1, title, plain_only, type, sql_statement, sql_register_bounce, sql_register_open, sql_register_click, recipients_preview'],
+        \Mirko\Newsletter\Domain\Model\RecipientList\CsvFile::class => ['showitem' => 'hidden;;1, title, plain_only, type, csv_separator, csv_fields, csv_filename, recipients_preview'],
+        \Mirko\Newsletter\Domain\Model\RecipientList\CsvList::class => ['showitem' => 'hidden;;1, title, plain_only, type, csv_separator, csv_fields, csv_values, recipients_preview'],
+        \Mirko\Newsletter\Domain\Model\RecipientList\CsvUrl::class => ['showitem' => 'hidden;;1, title, plain_only, type, csv_separator, csv_fields, csv_url, recipients_preview'],
+        \Mirko\Newsletter\Domain\Model\RecipientList\Html::class => ['showitem' => 'hidden;;1, title, plain_only, lang, type, html_url, html_fetch_type, recipients_preview'],
     ],
     'palettes' => [
         '1' => ['showitem' => ''],

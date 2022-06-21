@@ -4,7 +4,7 @@
 >
 
     <testsuites>
-        <testsuite name="EXT:newsletter unit tests">
+        <testsuite name="EXT:typo3_newsletter unit tests">
             <directory>../Unit/</directory>
         </testsuite>
     </testsuites>

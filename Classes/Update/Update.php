@@ -1,12 +1,13 @@
 <?php
 
-namespace Ecodev\Newsletter\Update;
+namespace Mirko\Newsletter\Update;
 
-use Ecodev\Newsletter\Tools;
+use Mirko\Newsletter\Tools;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\SingletonInterface;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Database\ConnectionPool;
 
 /**
  * Update for extensions
@@ -14,7 +15,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 class Update implements SingletonInterface
 {
     /**
-     * @var \TYPO3\CMS\Core\Database\DatabaseConnection
+     * @var \TYPO3\CMS\Core\Database\Connection
      */
     private $databaseConnection;
 
@@ -29,7 +30,7 @@ class Update implements SingletonInterface
     /**
      * Automatically update extension upon installation
      *
-     * This does NOT cover the the extension update case, so manual update via
+     * This does NOT cover the extension update case, so manual update via
      * Extension Manager is still required
      *
      * @param string $extensionKey
@@ -53,7 +54,7 @@ class Update implements SingletonInterface
     {
         $output = '';
         foreach ($this->getQueries() as $title => $queries) {
-            /* @var $transactedResult \Ecodev\Newsletter\Update\TransactionResult */
+            /* @var $transactedResult \Mirko\Newsletter\Update\TransactionResult */
             $transactedResult = Transaction::transactInnoDBQueries($queries);
 
             if ($transactedResult->complete()) {
@@ -134,9 +135,49 @@ class Update implements SingletonInterface
      */
     private function getQueriesToMigrateClassPathsInRecords()
     {
-        $count = $this->databaseConnection->exec_SELECTcountRows('*', 'tx_scheduler_task', 'serialized_task_object LIKE "%Tx_Newsletter_%"');
-        $count += $this->databaseConnection->exec_SELECTcountRows('*', 'tx_newsletter_domain_model_recipientlist', 'type LIKE "%Tx_Newsletter_%"');
-        $count += $this->databaseConnection->exec_SELECTcountRows('*', 'tx_newsletter_domain_model_newsletter', 'plain_converter LIKE "%Tx_Newsletter_%"');
+        $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tx_scheduler_task');
+        $count = $queryBuilder
+            ->count('*')
+            ->from('tx_scheduler_task')
+            ->where(
+                $queryBuilder->expr()->like(
+                    'serialized_task_object',
+                    $queryBuilder->createNamedParameter(
+                        '%Tx_Newsletter_%'
+                    )
+                )
+            )
+            ->execute();
+
+        $count += $queryBuilder
+            ->count('*')
+            ->from('tx_newsletter_domain_model_recipientlist')
+            ->where(
+                $queryBuilder->expr()->like(
+                    'type',
+                    $queryBuilder->createNamedParameter(
+                        '%Tx_Newsletter_%'
+                    )
+                )
+            )
+            ->execute();
+
+        $count += $queryBuilder
+            ->count('*')
+            ->from('tx_newsletter_domain_model_newsletter')
+            ->where(
+                $queryBuilder->expr()->like(
+                    'plain_converter',
+                    $queryBuilder->createNamedParameter(
+                        '%Tx_Newsletter_%'
+                    )
+                )
+            )
+            ->execute();
+
+//        $count = $this->databaseConnection->exec_SELECTcountRows('*', 'tx_scheduler_task', 'serialized_task_object LIKE "%Tx_Newsletter_%"');
+//        $count += $this->databaseConnection->exec_SELECTcountRows('*', 'tx_newsletter_domain_model_recipientlist', 'type LIKE "%Tx_Newsletter_%"');
+//        $count += $this->databaseConnection->exec_SELECTcountRows('*', 'tx_newsletter_domain_model_newsletter', 'plain_converter LIKE "%Tx_Newsletter_%"');
 
         if (!$count) {
             return [];
@@ -160,12 +201,23 @@ class Update implements SingletonInterface
     private function getQueriesToEncryptOldBounceAccountPasswords()
     {
         // Fetch the old records - they will have a default port and an empty config.
-        $rs = $this->databaseConnection->exec_SELECTquery('uid, password', 'tx_newsletter_domain_model_bounceaccount', 'port = 0 AND config = \'\'');
+        $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tx_newsletter_domain_model_bounceaccount');
+        $rows = $queryBuilder
+            ->select('uid', 'password')
+            ->from('tx_newsletter_domain_model_bounceaccount')
+            ->where($queryBuilder->expr()->eq('port', 0))
+            ->andWhere($queryBuilder->expr()->eq('config', ''))
+            ->execute();
+
+//        $rs = $this->databaseConnection->exec_SELECTquery('uid, password', 'tx_newsletter_domain_model_bounceaccount', 'port = 0 AND config = \'\'');
         $records = [];
-        while ($record = $this->databaseConnection->sql_fetch_assoc($rs)) {
+        foreach ($rows as $record) {
             $records[] = $record;
         }
-        $this->databaseConnection->sql_free_result($rs);
+//        while ($record = $this->databaseConnection->sql_fetch_assoc($rs)) {
+//            $records[] = $record;
+//        }
+//        $this->databaseConnection->sql_free_result($rs);
 
         if (empty($records)) {
             return [];

@@ -1,9 +1,9 @@
 <?php
 
-namespace Ecodev\Newsletter\Utility;
+namespace Mirko\Newsletter\Utility;
 
-use Ecodev\Newsletter\Domain\Model\Newsletter;
-use Ecodev\Newsletter\Tools;
+use Mirko\Newsletter\Domain\Model\Newsletter;
+use Mirko\Newsletter\Tools;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Lang\LanguageService;
 
@@ -59,7 +59,7 @@ class Validator
             }
             $LANG->init($LLkey); // initalize language-object with actual language
         }
-        $LANG->includeLLFile('EXT:newsletter/Resources/Private/Language/locallang.xlf');
+        $LANG->includeLLFile('EXT:typo3_newsletter/Resources/Private/Language/locallang.xlf');
 
         $this->lang = $LANG;
     }

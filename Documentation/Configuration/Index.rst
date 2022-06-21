@@ -176,7 +176,7 @@ The extension configuration is set globally via the Extension Manager, but it ca
    :Type:
       string
    :Default:
-      EXT:newsletter/Resources/Private/Templates/
+      EXT:typo3_newsletter/Resources/Private/Templates/
 
  - :Setup:
       view.partialRootPath
@@ -185,7 +185,7 @@ The extension configuration is set globally via the Extension Manager, but it ca
    :Type:
       string
    :Default:
-      EXT:newsletter/Resources/Private/Partials/
+      EXT:typo3_newsletter/Resources/Private/Partials/
 
  - :Setup:
       view.layoutRootPath
@@ -194,7 +194,7 @@ The extension configuration is set globally via the Extension Manager, but it ca
    :Type:
       string
    :Default:
-      EXT:newsletter/Resources/Private/Layouts/
+      EXT:typo3_newsletter/Resources/Private/Layouts/
 
  - :Setup:
       config.sender_name

@@ -1,8 +1,8 @@
 <?php
 
-namespace Ecodev\Newsletter\ViewHelpers\Be;
+namespace Mirko\Newsletter\ViewHelpers\Be;
 
-use Ecodev\Newsletter\ViewHelpers\AbstractViewHelper;
+use Mirko\Newsletter\ViewHelpers\AbstractViewHelper;
 
 /**
  * View helper which allows you to create ExtBase-based modules in the style of

@@ -1,8 +1,8 @@
 <?php
 
-namespace Ecodev\Newsletter\Tests\Unit\Utility;
+namespace Mirko\Newsletter\Tests\Unit\Utility;
 
-use Ecodev\Newsletter\Utility\Uri;
+use Mirko\Newsletter\Utility\Uri;
 
 /**
  * Test case for class Ecodev\Newsletter\Utility\Uri.

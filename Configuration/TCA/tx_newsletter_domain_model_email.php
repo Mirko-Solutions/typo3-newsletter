@@ -2,9 +2,9 @@
 
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email',
+        'title' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email',
         'label' => 'recipient_address',
-        'iconfile' => 'EXT:newsletter/Resources/Public/Icons/tx_newsletter_domain_model_email.svg',
+        'iconfile' => 'EXT:typo3_newsletter/Resources/Public/Icons/tx_newsletter_domain_model_email.svg',
     ],
     'interface' => [
         'showRecordFieldList' => 'begin_time,end_time,recipient_address,recipient_data,open_time,bounce_time,unsubscribed,newsletter',
@@ -17,7 +17,7 @@ return [
     ],
     'columns' => [
         'begin_time' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.begin_time',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.begin_time',
             'config' => [
                 'type' => 'input',
                 'size' => 12,
@@ -26,7 +26,7 @@ return [
             ],
         ],
         'end_time' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.end_time',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.end_time',
             'config' => [
                 'type' => 'input',
                 'size' => 12,
@@ -35,7 +35,7 @@ return [
             ],
         ],
         'recipient_address' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.recipient_address',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.recipient_address',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -44,7 +44,7 @@ return [
             ],
         ],
         'recipient_data' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.recipient_data',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.recipient_data',
             'config' => [
                 'type' => 'user',
                 'userFunc' => 'Ecodev\\Newsletter\Tca\\EmailTca->render',
@@ -53,7 +53,7 @@ return [
             ],
         ],
         'open_time' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.open_time',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.open_time',
             'config' => [
                 'type' => 'check',
                 'default' => 0,
@@ -61,7 +61,7 @@ return [
             ],
         ],
         'bounce_time' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.bounce_time',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.bounce_time',
             'config' => [
                 'type' => 'check',
                 'default' => 0,
@@ -69,7 +69,7 @@ return [
             ],
         ],
         'newsletter' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.newsletter',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.newsletter',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_newsletter_domain_model_newsletter',
@@ -85,7 +85,7 @@ return [
             ],
         ],
         'unsubscribed' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.unsubscribed',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.unsubscribed',
             'config' => [
                 'type' => 'check',
                 'default' => 0,
@@ -93,7 +93,7 @@ return [
             ],
         ],
         'auth_code' => [
-            'label' => 'LLL:EXT:newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.auth_code',
+            'label' => 'LLL:EXT:typo3_newsletter/Resources/Private/Language/locallang_db.xlf:tx_newsletter_domain_model_email.auth_code',
             'config' => [
                 'type' => 'input',
                 'size' => 32,

@@ -1,8 +1,8 @@
 <?php
 
-namespace Ecodev\Newsletter\ViewHelpers;
+namespace Mirko\Newsletter\ViewHelpers;
 
-use Ecodev\Newsletter\MVC\ExtDirect\Api;
+use Mirko\Newsletter\MVC\ExtDirect\Api;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
 
