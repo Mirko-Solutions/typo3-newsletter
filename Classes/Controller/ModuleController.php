@@ -1,9 +1,9 @@
 <?php
 
-namespace Mirko\Newsletter\Controller;
+namespace Mirko\Typo3Newsletter\Controller;
 
-use Mirko\Newsletter\Tools;
-use Mirko\Newsletter\Utility\UriBuilder;
+use Mirko\Typo3Newsletter\Tools;
+use Mirko\Typo3Newsletter\Utility\UriBuilder;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 

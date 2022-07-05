@@ -1,8 +1,8 @@
 <?php
 
-namespace Mirko\Newsletter\MVC\ExtDirect;
+namespace Mirko\Typo3Newsletter\MVC\ExtDirect;
 
-use Mirko\Newsletter\Tools;
+use Mirko\Typo3Newsletter\Tools;
 use ReflectionException;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 use TYPO3\CMS\Extbase\Reflection\ReflectionService;

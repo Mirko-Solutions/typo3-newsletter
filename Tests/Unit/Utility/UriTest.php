@@ -1,11 +1,11 @@
 <?php
 
-namespace Mirko\Newsletter\Tests\Unit\Utility;
+namespace Mirko\Typo3Newsletter\Tests\Unit\Utility;
 
-use Mirko\Newsletter\Utility\Uri;
+use Mirko\Typo3Newsletter\Utility\Uri;
 
 /**
- * Test case for class Ecodev\Newsletter\Utility\Uri.
+ * Test case for class Mirko\Typo3Newsletter\Utility\Uri.
  */
 class UriTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {

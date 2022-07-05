@@ -1,16 +1,16 @@
 <?php
 
-namespace Mirko\Newsletter\Tests\Functional;
+namespace Mirko\Typo3Newsletter\Tests\Functional;
 
-use Mirko\Newsletter\BounceHandler;
-use Mirko\Newsletter\Domain\Repository\EmailRepository;
+use Mirko\Typo3Newsletter\BounceHandler;
+use Mirko\Typo3Newsletter\Domain\Repository\EmailRepository;
 
 require_once __DIR__ . '/AbstractFunctionalTestCase.php';
 
 /**
- * Functional test for the \Mirko\Newsletter\BounceHandler
+ * Functional test for the \Mirko\Typo3Newsletter\BounceHandler
  */
-class BounceHandlerTest extends \Mirko\Newsletter\Tests\Functional\AbstractFunctionalTestCase
+class BounceHandlerTest extends \Mirko\Typo3Newsletter\Tests\Functional\AbstractFunctionalTestCase
 {
     public function testDispatch()
     {

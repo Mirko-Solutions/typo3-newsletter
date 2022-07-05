@@ -1,16 +1,16 @@
 <?php
 
-namespace Mirko\Newsletter\Tests\Functional;
+namespace Mirko\Typo3Newsletter\Tests\Functional;
 
-use Mirko\Newsletter\Domain\Model\BounceAccount;
-use Mirko\Newsletter\Domain\Model\Email;
-use Mirko\Newsletter\Domain\Model\Newsletter;
-use Mirko\Newsletter\Mailer;
+use Mirko\Typo3Newsletter\Domain\Model\BounceAccount;
+use Mirko\Typo3Newsletter\Domain\Model\Email;
+use Mirko\Typo3Newsletter\Domain\Model\Newsletter;
+use Mirko\Typo3Newsletter\Mailer;
 
 /**
- * Test case for class Ecodev\Newsletter\Mailer.
+ * Test case for class Mirko\Typo3Newsletter\Mailer.
  */
-class MailerTest extends \Mirko\Newsletter\Tests\Functional\AbstractFunctionalTestCase
+class MailerTest extends \Mirko\Typo3Newsletter\Tests\Functional\AbstractFunctionalTestCase
 {
     /**
      * @var Newsletter

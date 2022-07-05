@@ -1,14 +1,14 @@
 <?php
 
-namespace Mirko\Newsletter\Tests\Unit\Controller;
+namespace Mirko\Typo3Newsletter\Tests\Unit\Controller;
 
-use Mirko\Newsletter\Controller\BounceAccountController;
-use Mirko\Newsletter\Domain\Repository\BounceAccountRepository;
-use Mirko\Newsletter\MVC\View\ExtDirectView;
+use Mirko\Typo3Newsletter\Controller\BounceAccountController;
+use Mirko\Typo3Newsletter\Domain\Repository\BounceAccountRepository;
+use Mirko\Typo3Newsletter\MVC\View\ExtDirectView;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 /**
- * Test case for class Ecodev\Newsletter\Controller\BounceAccountController.
+ * Test case for class Mirko\Typo3Newsletter\Controller\BounceAccountController.
  */
 class BounceAccountControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {

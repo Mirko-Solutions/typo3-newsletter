@@ -1,12 +1,12 @@
 <?php
 
-namespace Mirko\Newsletter\Tests\Unit\Domain\Model;
+namespace Mirko\Typo3Newsletter\Tests\Unit\Domain\Model;
 
-use Mirko\Newsletter\Domain\Model\BounceAccount;
-use Mirko\Newsletter\Tools;
+use Mirko\Typo3Newsletter\Domain\Model\BounceAccount;
+use Mirko\Typo3Newsletter\Tools;
 
 /**
- * Test case for class \Mirko\Newsletter\Domain\Model\BounceAccount.
+ * Test case for class \Mirko\Typo3Newsletter\Domain\Model\BounceAccount.
  */
 class BounceAccountTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {

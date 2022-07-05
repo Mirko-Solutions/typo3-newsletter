@@ -1,6 +1,6 @@
 <?php
 
-namespace Mirko\Newsletter\Domain\Model;
+namespace Mirko\Typo3Newsletter\Domain\Model;
 
 /**
  * Email interface defining minimal contract to be used by third party

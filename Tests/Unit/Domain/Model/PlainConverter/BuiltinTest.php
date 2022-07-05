@@ -1,11 +1,11 @@
 <?php
 
-namespace Mirko\Newsletter\Tests\Unit\Domain\Model\PlainConverter;
+namespace Mirko\Typo3Newsletter\Tests\Unit\Domain\Model\PlainConverter;
 
-use Mirko\Newsletter\Domain\Model\PlainConverter\Builtin;
+use Mirko\Typo3Newsletter\Domain\Model\PlainConverter\Builtin;
 
 /**
- * Test case for class \Mirko\Newsletter\Domain\Model\PlainConverter\Builtin.
+ * Test case for class \Mirko\Typo3Newsletter\Domain\Model\PlainConverter\Builtin.
  */
 class BuiltinTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {

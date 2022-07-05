@@ -1,6 +1,6 @@
 <?php
 
-namespace Mirko\Newsletter\Utility;
+namespace Mirko\Typo3Newsletter\Utility;
 
 /**
  * Uri helper

@@ -27,12 +27,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Mirko\\Newsletter\\": "Classes/"
+      "Mirko\\Typo3Newsletter\\": "Classes/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Mirko\\Newsletter\\Tests\\": "Tests/"
+      "Mirko\\Typo3Newsletter\\Tests\\": "Tests/"
     }
   },
   "extra": {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Mirko\Newsletter;
+namespace Mirko\Typo3Newsletter;
 
 use DateTime;
-use Mirko\Newsletter\Domain\Model\Email;
-use Mirko\Newsletter\Domain\Model\Newsletter;
-use Mirko\Newsletter\Domain\Repository\EmailRepository;
-use Mirko\Newsletter\Domain\Repository\NewsletterRepository;
+use Mirko\Typo3Newsletter\Domain\Model\Email;
+use Mirko\Typo3Newsletter\Domain\Model\Newsletter;
+use Mirko\Typo3Newsletter\Domain\Repository\EmailRepository;
+use Mirko\Typo3Newsletter\Domain\Repository\NewsletterRepository;
 use TYPO3\CMS\Core\Database\DatabaseConnection;
 use TYPO3\CMS\Core\Log\LogManager;
 use TYPO3\CMS\Core\Utility\GeneralUtility;

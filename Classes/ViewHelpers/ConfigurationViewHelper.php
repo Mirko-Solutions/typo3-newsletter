@@ -1,6 +1,6 @@
 <?php
 
-namespace Mirko\Newsletter\ViewHelpers;
+namespace Mirko\Typo3Newsletter\ViewHelpers;
 
 /**
  * Makes an array of configuration available in JavaScript

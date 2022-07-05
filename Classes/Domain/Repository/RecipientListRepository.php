@@ -1,8 +1,8 @@
 <?php
 
-namespace Mirko\Newsletter\Domain\Repository;
+namespace Mirko\Typo3Newsletter\Domain\Repository;
 
-use Mirko\Newsletter\Domain\Model\RecipientList;
+use Mirko\Typo3Newsletter\Domain\Model\RecipientList;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManager;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;

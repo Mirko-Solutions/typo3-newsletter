@@ -1,6 +1,6 @@
 <?php
 
-namespace Mirko\Newsletter\Domain\Model;
+namespace Mirko\Typo3Newsletter\Domain\Model;
 
 /**
  * Interface for Plain Text Converter. Converter may use either HTML

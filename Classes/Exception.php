@@ -1,6 +1,6 @@
 <?php
 
-namespace Mirko\Newsletter;
+namespace Mirko\Typo3Newsletter;
 
 /**
  * The base exception for this extension.

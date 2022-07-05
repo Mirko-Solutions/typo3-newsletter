@@ -1,15 +1,15 @@
 <?php
 
-namespace Mirko\Newsletter\Domain\Model;
+namespace Mirko\Typo3Newsletter\Domain\Model;
 
 use DateTime;
-use Mirko\Newsletter\Domain\Model\PlainConverter\Builtin;
-use Mirko\Newsletter\Domain\Repository\BounceAccountRepository;
-use Mirko\Newsletter\Domain\Repository\EmailRepository;
-use Mirko\Newsletter\Domain\Repository\NewsletterRepository;
-use Mirko\Newsletter\Domain\Repository\RecipientListRepository;
-use Mirko\Newsletter\Tools;
-use Mirko\Newsletter\Utility\Validator;
+use Mirko\Typo3Newsletter\Domain\Model\PlainConverter\Builtin;
+use Mirko\Typo3Newsletter\Domain\Repository\BounceAccountRepository;
+use Mirko\Typo3Newsletter\Domain\Repository\EmailRepository;
+use Mirko\Typo3Newsletter\Domain\Repository\NewsletterRepository;
+use Mirko\Typo3Newsletter\Domain\Repository\RecipientListRepository;
+use Mirko\Typo3Newsletter\Tools;
+use Mirko\Typo3Newsletter\Utility\Validator;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\TypoScript\ExtendedTemplateService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -119,7 +119,7 @@ class Newsletter extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * bounceAccount
      *
      * @lazy
-     * @var \Mirko\Newsletter\Domain\Model\BounceAccount
+     * @var \Mirko\Typo3Newsletter\Domain\Model\BounceAccount
      */
     protected $bounceAccount;
 
@@ -134,7 +134,7 @@ class Newsletter extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * recipientList
      *
      * @lazy
-     * @var \Mirko\Newsletter\Domain\Model\RecipientList
+     * @var \Mirko\Typo3Newsletter\Domain\Model\RecipientList
      */
     protected $recipientList;
 
@@ -306,7 +306,7 @@ class Newsletter extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
         }
 
         if (!($converter instanceof IPlainConverter)) {
-            throw new \Exception("$class does not implement \Mirko\Newsletter\Domain\Model\IPlainConverter");
+            throw new \Exception("$class does not implement \Mirko\Typo3Newsletter\Domain\Model\IPlainConverter");
         }
 
         return $converter;

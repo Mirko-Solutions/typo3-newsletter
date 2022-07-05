@@ -1,9 +1,11 @@
 <?php
 
-namespace Mirko\Newsletter\Utility;
+namespace Mirko\Typo3Newsletter\Utility;
 
 use TYPO3\CMS\Core\TimeTracker\TimeTracker;
+use TYPO3\CMS\Core\TypoScript\TemplateService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Utility\RootlineUtility;
 use TYPO3\CMS\Extbase\Core\Bootstrap;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
 use TYPO3\CMS\Extbase\Service\ExtensionService;
@@ -67,17 +69,26 @@ abstract class UriBuilder
                 $GLOBALS['TT'] = new TimeTracker();
                 $GLOBALS['TT']->start();
             }
+//            $contentObj = $this->configurationManager->getContentObject();
+//            $TSFE = @GeneralUtility::makeInstance(TypoScriptFrontendController::class, $GLOBALS['TYPO3_CONF_VARS'], $currentPid, '0', 1);
+//
+//            $GLOBALS['TSFE'] = $TSFE;
+//            $GLOBALS['TSFE']->initFEuser();
+//            $GLOBALS['TSFE']->fetch_the_id();
+//            $GLOBALS['TSFE']->getPageAndRootline();
+//            $GLOBALS['TSFE']->initTemplate();
+//            $GLOBALS['TSFE']->tmpl->getFileName_backPath = PATH_site;
+//            $GLOBALS['TSFE']->forceTemplateParsing = 1;
+//            $GLOBALS['TSFE']->getConfigArray();
 
-            $TSFE = @GeneralUtility::makeInstance(TypoScriptFrontendController::class, $GLOBALS['TYPO3_CONF_VARS'], $currentPid, '0', 1);
-
-            $GLOBALS['TSFE'] = $TSFE;
-            $GLOBALS['TSFE']->initFEuser();
-            $GLOBALS['TSFE']->fetch_the_id();
-            $GLOBALS['TSFE']->getPageAndRootline();
-            $GLOBALS['TSFE']->initTemplate();
-            $GLOBALS['TSFE']->tmpl->getFileName_backPath = PATH_site;
-            $GLOBALS['TSFE']->forceTemplateParsing = 1;
-            $GLOBALS['TSFE']->getConfigArray();
+            $template = GeneralUtility::makeInstance(TemplateService::class);
+            $template->tt_track = false;
+            $rootline = GeneralUtility::makeInstance(
+                RootlineUtility::class, $currentPid
+            )->get();
+            $template->runThroughTemplates($rootline, 0);
+            $template->generateConfig();
+            $typoScriptSetup = $template->setup;
         }
 
         // If extbase is not boostrapped yet, we must do it before building uriBuilder (when used from scheduler CLI)

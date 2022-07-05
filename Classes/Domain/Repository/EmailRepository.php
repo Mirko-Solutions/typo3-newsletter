@@ -1,12 +1,12 @@
 <?php
 
-namespace Mirko\Newsletter\Domain\Repository;
+namespace Mirko\Typo3Newsletter\Domain\Repository;
 
-use Mirko\Newsletter\Domain\Model\Email;
-use Mirko\Newsletter\Tools;
+use Mirko\Typo3Newsletter\Domain\Model\Email;
+use Mirko\Typo3Newsletter\Tools;
 
 /**
- * Repository for \Mirko\Newsletter\Domain\Model\Email
+ * Repository for \Mirko\Typo3Newsletter\Domain\Model\Email
  */
 class EmailRepository extends AbstractRepository
 {

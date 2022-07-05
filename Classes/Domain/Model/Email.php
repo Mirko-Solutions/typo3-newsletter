@@ -1,9 +1,9 @@
 <?php
 
-namespace Mirko\Newsletter\Domain\Model;
+namespace Mirko\Typo3Newsletter\Domain\Model;
 
 use DateTime;
-use Mirko\Newsletter\Utility\UriBuilder;
+use Mirko\Typo3Newsletter\Utility\UriBuilder;
 
 /**
  * Email
@@ -57,7 +57,7 @@ class Email extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity implements Em
      * newsletter
      *
      * @lazy
-     * @var \Mirko\Newsletter\Domain\Model\Newsletter
+     * @var \Mirko\Typo3Newsletter\Domain\Model\Newsletter
      */
     protected $newsletter;
 

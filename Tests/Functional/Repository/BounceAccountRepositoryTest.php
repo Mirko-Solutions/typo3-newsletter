@@ -1,15 +1,15 @@
 <?php
 
-namespace Mirko\Newsletter\Tests\Functional\Repository;
+namespace Mirko\Typo3Newsletter\Tests\Functional\Repository;
 
-use Mirko\Newsletter\Domain\Repository\BounceAccountRepository;
+use Mirko\Typo3Newsletter\Domain\Repository\BounceAccountRepository;
 
 require_once __DIR__ . '/../AbstractFunctionalTestCase.php';
 
 /**
- * Functional test for the \Mirko\Newsletter\Domain\Repository\BounceAccountRepository
+ * Functional test for the \Mirko\Typo3Newsletter\Domain\Repository\BounceAccountRepository
  */
-class BounceAccountRepositoryTest extends \Mirko\Newsletter\Tests\Functional\AbstractFunctionalTestCase
+class BounceAccountRepositoryTest extends \Mirko\Typo3Newsletter\Tests\Functional\AbstractFunctionalTestCase
 {
     /** @var BounceAccountRepository */
     private $bounceAccountRepository;

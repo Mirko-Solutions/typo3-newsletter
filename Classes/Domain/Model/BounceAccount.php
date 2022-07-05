@@ -1,8 +1,8 @@
 <?php
 
-namespace Mirko\Newsletter\Domain\Model;
+namespace Mirko\Typo3Newsletter\Domain\Model;
 
-use Mirko\Newsletter\Tools;
+use Mirko\Typo3Newsletter\Tools;
 
 /**
  * BounceAccount

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mirko\Newsletter\ViewHelpers;
+namespace Mirko\Typo3Newsletter\ViewHelpers;
 
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
@@ -17,6 +17,14 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
  */
 class IncludeJsFileViewHelper extends AbstractViewHelper
 {
+    public function initializeArguments()
+    {
+        parent::initializeArguments();
+
+        $this->registerArgument('name', 'string', 'Name', false, null);
+        $this->registerArgument('extKey', 'string', 'Extension key', false, null);
+        $this->registerArgument('pathInsideExt', 'string', 'Path inside extension', false, 'Resources/Public/JavaScript/');
+    }
     /**
      * Calls addJsFile on the Instance of TYPO3\CMS\Core\Page\PageRenderer.
      *
@@ -24,8 +32,12 @@ class IncludeJsFileViewHelper extends AbstractViewHelper
      * @param string $extKey the extension, where the file is located
      * @param string $pathInsideExt the path to the file relative to the ext-folder
      */
-    public function render($name = null, $extKey = null, $pathInsideExt = 'Resources/Public/JavaScript/')
+    public function render()
     {
+        $name = $this->arguments['name'];
+        $extKey = $this->arguments['extKey'];
+        $pathInsideExt = $this->arguments['pathInsideExt'];
+
         if ($extKey == null) {
             $extKey = $this->controllerContext->getRequest()->getControllerExtensionKey();
         }

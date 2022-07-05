@@ -1,8 +1,8 @@
 <?php
 
-namespace Mirko\Newsletter\Tca;
+namespace Mirko\Typo3Newsletter\Tca;
 
-use Mirko\Newsletter\Tools;
+use Mirko\Typo3Newsletter\Tools;
 
 /**
  * Handle bounced account encryption

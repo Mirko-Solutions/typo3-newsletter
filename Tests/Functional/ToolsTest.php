@@ -1,17 +1,17 @@
 <?php
 
-namespace Mirko\Newsletter\Tests\Functional;
+namespace Mirko\Typo3Newsletter\Tests\Functional;
 
-use Mirko\Newsletter\Domain\Repository\NewsletterRepository;
-use Mirko\Newsletter\Tools;
-use Mirko\Newsletter\Utility\Validator;
+use Mirko\Typo3Newsletter\Domain\Repository\NewsletterRepository;
+use Mirko\Typo3Newsletter\Tools;
+use Mirko\Typo3Newsletter\Utility\Validator;
 
 require_once __DIR__ . '/AbstractFunctionalTestCase.php';
 
 /**
- * Functional test for the \Mirko\Newsletter\Tools
+ * Functional test for the \Mirko\Typo3Newsletter\Tools
  */
-class ToolsTest extends \Mirko\Newsletter\Tests\Functional\AbstractFunctionalTestCase
+class ToolsTest extends \Mirko\Typo3Newsletter\Tests\Functional\AbstractFunctionalTestCase
 {
     public function testCreateAllSpool()
     {

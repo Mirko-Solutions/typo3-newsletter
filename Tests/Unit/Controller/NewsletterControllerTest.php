@@ -1,17 +1,17 @@
 <?php
 
-namespace Mirko\Newsletter\Tests\Unit\Controller;
+namespace Mirko\Typo3Newsletter\Tests\Unit\Controller;
 
-use Mirko\Newsletter\Controller\NewsletterController;
-use Mirko\Newsletter\Domain\Model\Newsletter;
-use Mirko\Newsletter\Domain\Model\RecipientList\CsvList;
-use Mirko\Newsletter\Domain\Repository\NewsletterRepository;
-use Mirko\Newsletter\MVC\View\ExtDirectView;
+use Mirko\Typo3Newsletter\Controller\NewsletterController;
+use Mirko\Typo3Newsletter\Domain\Model\Newsletter;
+use Mirko\Typo3Newsletter\Domain\Model\RecipientList\CsvList;
+use Mirko\Typo3Newsletter\Domain\Repository\NewsletterRepository;
+use Mirko\Typo3Newsletter\MVC\View\ExtDirectView;
 use TYPO3\CMS\Extbase\Persistence\Generic\PersistenceManager;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 /**
- * Test case for class Ecodev\Newsletter\Controller\NewsletterController.
+ * Test case for class Mirko\Typo3Newsletter\Controller\NewsletterController.
  */
 class NewsletterControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {

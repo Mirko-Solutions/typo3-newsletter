@@ -1,14 +1,14 @@
 <?php
 
-namespace Mirko\Newsletter\Tests\Unit\Domain\Model\PlainConverter;
+namespace Mirko\Typo3Newsletter\Tests\Unit\Domain\Model\PlainConverter;
 
-use Mirko\Newsletter\Domain\Model\PlainConverter\Lynx;
-use Mirko\Newsletter\Tools;
+use Mirko\Typo3Newsletter\Domain\Model\PlainConverter\Lynx;
+use Mirko\Typo3Newsletter\Tools;
 
 /**
- * Test case for class \Mirko\Newsletter\Domain\Model\PlainConverter\Lynx.
+ * Test case for class \Mirko\Typo3Newsletter\Domain\Model\PlainConverter\Lynx.
  */
-class LynxTest extends \Mirko\Newsletter\Tests\Unit\AbstractUnitTestCase
+class LynxTest extends \Mirko\Typo3Newsletter\Tests\Unit\AbstractUnitTestCase
 {
     /**
      * @var Lynx

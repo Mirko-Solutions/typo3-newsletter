@@ -1,9 +1,9 @@
 <?php
 
-namespace Mirko\Newsletter\Tests\Unit\Domain\Model\RecipientList;
+namespace Mirko\Typo3Newsletter\Tests\Unit\Domain\Model\RecipientList;
 
 /**
- * Test case for class \Mirko\Newsletter\Domain\Model\CsvList.
+ * Test case for class \Mirko\Typo3Newsletter\Domain\Model\CsvList.
  */
 abstract class AbstractRecipientList extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {

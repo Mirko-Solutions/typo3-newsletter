@@ -1,6 +1,6 @@
 <?php
 
-namespace Mirko\Newsletter\MVC\View;
+namespace Mirko\Typo3Newsletter\MVC\View;
 
 /**
  * A transparent view that extends JsonView and passes on the prepared array

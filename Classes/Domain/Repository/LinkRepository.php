@@ -1,13 +1,13 @@
 <?php
 
-namespace Mirko\Newsletter\Domain\Repository;
+namespace Mirko\Typo3Newsletter\Domain\Repository;
 
-use Mirko\Newsletter\Domain\Model\Link;
-use Mirko\Newsletter\Tools;
-use Mirko\Newsletter\Utility\MarkerSubstitutor;
+use Mirko\Typo3Newsletter\Domain\Model\Link;
+use Mirko\Typo3Newsletter\Tools;
+use Mirko\Typo3Newsletter\Utility\MarkerSubstitutor;
 
 /**
- * Repository for \Mirko\Newsletter\Domain\Model\Link
+ * Repository for \Mirko\Typo3Newsletter\Domain\Model\Link
  */
 class LinkRepository extends AbstractRepository
 {

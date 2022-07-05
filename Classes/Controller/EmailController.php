@@ -1,14 +1,14 @@
 <?php
 
-namespace Mirko\Newsletter\Controller;
+namespace Mirko\Typo3Newsletter\Controller;
 
-use Mirko\Newsletter\Domain\Model\Email;
-use Mirko\Newsletter\Domain\Model\Newsletter;
-use Mirko\Newsletter\Domain\Model\RecipientList;
-use Mirko\Newsletter\Domain\Repository\EmailRepository;
-use Mirko\Newsletter\MVC\Controller\ExtDirectActionController;
-use Mirko\Newsletter\Tools;
-use Mirko\Newsletter\Utility\EmailParser;
+use Mirko\Typo3Newsletter\Domain\Model\Email;
+use Mirko\Typo3Newsletter\Domain\Model\Newsletter;
+use Mirko\Typo3Newsletter\Domain\Model\RecipientList;
+use Mirko\Typo3Newsletter\Domain\Repository\EmailRepository;
+use Mirko\Typo3Newsletter\MVC\Controller\ExtDirectActionController;
+use Mirko\Typo3Newsletter\Tools;
+use Mirko\Typo3Newsletter\Utility\EmailParser;
 use TYPO3\CMS\Core\Mail\MailMessage;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
@@ -146,7 +146,7 @@ class EmailController extends ExtDirectActionController
             if ($email) {
                 $newsletter = $email->getNewsletter();
 
-                // Here we need to ensure that we have real newsletter instance because of type hinting on \Mirko\Newsletter\Tools::getConfiguredMailer()
+                // Here we need to ensure that we have real newsletter instance because of type hinting on \Mirko\Typo3Newsletter\Tools::getConfiguredMailer()
                 if ($newsletter instanceof LazyLoadingProxy) {
                     $newsletter = $newsletter->_loadRealInstance();
                 }
@@ -187,7 +187,7 @@ class EmailController extends ExtDirectActionController
     }
 
     /**
-     * Unsubscribe recipient from RecipientList by registering a bounce of level \Mirko\Newsletter\Utility\EmailParser::NEWSLETTER_UNSUBSCRIBE
+     * Unsubscribe recipient from RecipientList by registering a bounce of level \Mirko\Typo3Newsletter\Utility\EmailParser::NEWSLETTER_UNSUBSCRIBE
      */
     public function unsubscribeAction()
     {

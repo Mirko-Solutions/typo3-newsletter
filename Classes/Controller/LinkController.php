@@ -1,9 +1,9 @@
 <?php
 
-namespace Mirko\Newsletter\Controller;
+namespace Mirko\Typo3Newsletter\Controller;
 
-use Mirko\Newsletter\Domain\Repository\LinkRepository;
-use Mirko\Newsletter\MVC\Controller\ExtDirectActionController;
+use Mirko\Typo3Newsletter\Domain\Repository\LinkRepository;
+use Mirko\Typo3Newsletter\MVC\Controller\ExtDirectActionController;
 use TYPO3\CMS\Core\Error\Http\PageNotFoundException;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 

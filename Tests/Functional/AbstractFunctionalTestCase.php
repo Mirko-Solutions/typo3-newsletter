@@ -1,6 +1,6 @@
 <?php
 
-namespace Mirko\Newsletter\Tests\Functional;
+namespace Mirko\Typo3Newsletter\Tests\Functional;
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Object\ObjectManager;

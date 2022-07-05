@@ -1,6 +1,6 @@
 <?php
 
-namespace Mirko\Newsletter\ViewHelpers;
+namespace Mirko\Typo3Newsletter\ViewHelpers;
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 

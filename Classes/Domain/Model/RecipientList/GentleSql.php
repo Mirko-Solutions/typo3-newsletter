@@ -1,9 +1,9 @@
 <?php
 
-namespace Mirko\Newsletter\Domain\Model\RecipientList;
+namespace Mirko\Typo3Newsletter\Domain\Model\RecipientList;
 
-use Mirko\Newsletter\Tools;
-use Mirko\Newsletter\Utility\EmailParser;
+use Mirko\Typo3Newsletter\Tools;
+use Mirko\Typo3Newsletter\Utility\EmailParser;
 
 /**
  * This is a more gentle version on the generic sql-driven target. It is dependant on integer field tx_newsletter_bounce

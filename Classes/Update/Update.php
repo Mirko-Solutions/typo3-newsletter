@@ -1,8 +1,8 @@
 <?php
 
-namespace Mirko\Newsletter\Update;
+namespace Mirko\Typo3Newsletter\Update;
 
-use Mirko\Newsletter\Tools;
+use Mirko\Typo3Newsletter\Tools;
 use TYPO3\CMS\Core\Messaging\FlashMessage;
 use TYPO3\CMS\Core\SingletonInterface;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
@@ -54,7 +54,7 @@ class Update implements SingletonInterface
     {
         $output = '';
         foreach ($this->getQueries() as $title => $queries) {
-            /* @var $transactedResult \Mirko\Newsletter\Update\TransactionResult */
+            /* @var $transactedResult \Mirko\Typo3Newsletter\Update\TransactionResult */
             $transactedResult = Transaction::transactInnoDBQueries($queries);
 
             if ($transactedResult->complete()) {
@@ -201,19 +201,28 @@ class Update implements SingletonInterface
     private function getQueriesToEncryptOldBounceAccountPasswords()
     {
         // Fetch the old records - they will have a default port and an empty config.
-        $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tx_newsletter_domain_model_bounceaccount');
-        $rows = $queryBuilder
-            ->select('uid', 'password')
-            ->from('tx_newsletter_domain_model_bounceaccount')
-            ->where($queryBuilder->expr()->eq('port', 0))
-            ->andWhere($queryBuilder->expr()->eq('config', ''))
-            ->execute();
+//        $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tx_newsletter_domain_model_bounceaccount');
+//        $rows = $queryBuilder
+//            ->select('uid', 'password')
+//            ->from('tx_newsletter_domain_model_bounceaccount')
+//            ->where($queryBuilder->expr()->eq('port', 0))
+//            ->andWhere($queryBuilder->expr()->eq('config', ''))
+//            ->execute();
+//
+//        $records = [];
+//        foreach ($rows as $record) {
+//            $records[] = $record;
+//        }
 
-//        $rs = $this->databaseConnection->exec_SELECTquery('uid, password', 'tx_newsletter_domain_model_bounceaccount', 'port = 0 AND config = \'\'');
+        $rs = $this->databaseConnection->exec_SELECTquery('uid, password', 'tx_newsletter_domain_model_bounceaccount', 'port = 0 AND config = \'\'');
         $records = [];
-        foreach ($rows as $record) {
+        while ($record = $this->databaseConnection->sql_fetch_assoc($rs)) {
             $records[] = $record;
         }
+        $this->databaseConnection->sql_free_result($rs);
+
+//        $rs = $this->databaseConnection->exec_SELECTquery('uid, password', 'tx_newsletter_domain_model_bounceaccount', 'port = 0 AND config = \'\'');
+
 //        while ($record = $this->databaseConnection->sql_fetch_assoc($rs)) {
 //            $records[] = $record;
 //        }

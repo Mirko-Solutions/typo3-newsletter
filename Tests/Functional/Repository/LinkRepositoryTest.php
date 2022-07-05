@@ -1,16 +1,16 @@
 <?php
 
-namespace Mirko\Newsletter\Tests\Functional\Repository;
+namespace Mirko\Typo3Newsletter\Tests\Functional\Repository;
 
-use Mirko\Newsletter\Domain\Repository\EmailRepository;
-use Mirko\Newsletter\Domain\Repository\LinkRepository;
+use Mirko\Typo3Newsletter\Domain\Repository\EmailRepository;
+use Mirko\Typo3Newsletter\Domain\Repository\LinkRepository;
 
 require_once __DIR__ . '/../AbstractFunctionalTestCase.php';
 
 /**
- * Functional test for the \Mirko\Newsletter\Domain\Repository\LinkRepository
+ * Functional test for the \Mirko\Typo3Newsletter\Domain\Repository\LinkRepository
  */
-class LinkRepositoryTest extends \Mirko\Newsletter\Tests\Functional\AbstractFunctionalTestCase
+class LinkRepositoryTest extends \Mirko\Typo3Newsletter\Tests\Functional\AbstractFunctionalTestCase
 {
     /** @var LinkRepository */
     private $linkRepository;

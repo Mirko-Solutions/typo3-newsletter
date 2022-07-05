@@ -1,8 +1,8 @@
 <?php
 
-namespace Mirko\Newsletter\Update;
+namespace Mirko\Typo3Newsletter\Update;
 
-use Mirko\Newsletter\Tools;
+use Mirko\Typo3Newsletter\Tools;
 
 /**
  * A collection of transacted operations.

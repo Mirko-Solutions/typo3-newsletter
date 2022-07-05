@@ -1,14 +1,14 @@
 <?php
 
-namespace Mirko\Newsletter;
+namespace Mirko\Typo3Newsletter;
 
 use DateTime;
-use Mirko\Newsletter\Domain\Model\Email;
-use Mirko\Newsletter\Domain\Model\RecipientList;
-use Mirko\Newsletter\Domain\Repository\BounceAccountRepository;
-use Mirko\Newsletter\Domain\Repository\EmailRepository;
-use Mirko\Newsletter\Domain\Repository\RecipientListRepository;
-use Mirko\Newsletter\Utility\EmailParser;
+use Mirko\Typo3Newsletter\Domain\Model\Email;
+use Mirko\Typo3Newsletter\Domain\Model\RecipientList;
+use Mirko\Typo3Newsletter\Domain\Repository\BounceAccountRepository;
+use Mirko\Typo3Newsletter\Domain\Repository\EmailRepository;
+use Mirko\Typo3Newsletter\Domain\Repository\RecipientListRepository;
+use Mirko\Typo3Newsletter\Utility\EmailParser;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Mirko\Newsletter\Utility;
+namespace Mirko\Typo3Newsletter\Utility;
 
-use Mirko\Newsletter\Domain\Model\Newsletter;
-use Mirko\Newsletter\Tools;
+use Mirko\Typo3Newsletter\Domain\Model\Newsletter;
+use Mirko\Typo3Newsletter\Tools;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Lang\LanguageService;
 
@@ -49,7 +49,7 @@ class Validator
      */
     private function initializeLang()
     {
-        // Here we need to include the locallization file for ExtDirect calls, otherwise we get empty strings
+        // Here we need to include the localization file for ExtDirect calls, otherwise we get empty strings
         global $LANG;
         if (is_null($LANG)) {
             $LANG = GeneralUtility::makeInstance(LanguageService::class); // create language-object

@@ -1,8 +1,8 @@
 <?php
 
-namespace Mirko\Newsletter\Utility;
+namespace Mirko\Typo3Newsletter\Utility;
 
-use Mirko\Newsletter\Domain\Model\Email;
+use Mirko\Typo3Newsletter\Domain\Model\Email;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mirko\Newsletter\ViewHelpers;
+namespace Mirko\Typo3Newsletter\ViewHelpers;
 
 /**
  * View helper which allows you to include a JS File.

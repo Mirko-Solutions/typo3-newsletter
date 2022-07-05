@@ -1,8 +1,8 @@
 <?php
 
-namespace Mirko\Newsletter\MVC\ExtDirect;
+namespace Mirko\Typo3Newsletter\MVC\ExtDirect;
 
-use Mirko\Newsletter\ExtDirectRequest;
+use Mirko\Typo3Newsletter\ExtDirectRequest;
 use Exception;
 use TYPO3\CMS\Extbase\Mvc\Dispatcher;
 use TYPO3\CMS\Extbase\Mvc\Web\Response;
@@ -24,7 +24,7 @@ class RequestHandler implements \TYPO3\CMS\Extbase\Mvc\RequestHandlerInterface
     protected $dispatcher;
 
     /**
-     * @var \Mirko\Newsletter\MVC\ExtDirect\RequestBuilder
+     * @var \Mirko\Typo3Newsletter\MVC\ExtDirect\RequestBuilder
      */
     protected $requestBuilder;
 

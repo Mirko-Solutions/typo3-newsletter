@@ -1,6 +1,6 @@
 <?php
 
-namespace Mirko\Newsletter\Domain\Model\RecipientList;
+namespace Mirko\Typo3Newsletter\Domain\Model\RecipientList;
 
 /**
  * Recipient List using CSV list (values directly input in TYPO3 Backend)

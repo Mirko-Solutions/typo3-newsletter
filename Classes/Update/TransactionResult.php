@@ -1,6 +1,6 @@
 <?php
 
-namespace Mirko\Newsletter\Update;
+namespace Mirko\Typo3Newsletter\Update;
 
 /**
  * A model for transaction states of operands

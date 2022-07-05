@@ -1,11 +1,11 @@
 <?php
 
-namespace Mirko\Newsletter\Tests\Unit\Domain\Model\RecipientList;
+namespace Mirko\Typo3Newsletter\Tests\Unit\Domain\Model\RecipientList;
 
-use Mirko\Newsletter\Domain\Model\RecipientList\Sql;
+use Mirko\Typo3Newsletter\Domain\Model\RecipientList\Sql;
 
 /**
- * Test case for class \Mirko\Newsletter\Domain\Model\Sql.
+ * Test case for class \Mirko\Typo3Newsletter\Domain\Model\Sql.
  */
 class SqlTest extends AbstractRecipientList
 {

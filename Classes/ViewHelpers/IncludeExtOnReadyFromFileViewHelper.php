@@ -1,8 +1,8 @@
 <?php
 
-namespace Mirko\Newsletter\ViewHelpers;
+namespace Mirko\Typo3Newsletter\ViewHelpers;
 
-use Mirko\Newsletter\Exception;
+use Mirko\Typo3Newsletter\Exception;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 /**

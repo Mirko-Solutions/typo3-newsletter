@@ -1,8 +1,8 @@
 <?php
 
-namespace Mirko\Newsletter\Domain\Model\RecipientList;
+namespace Mirko\Typo3Newsletter\Domain\Model\RecipientList;
 
-use Mirko\Newsletter\Tools;
+use Mirko\Typo3Newsletter\Tools;
 
 /**
  * Recipient List using CSV file

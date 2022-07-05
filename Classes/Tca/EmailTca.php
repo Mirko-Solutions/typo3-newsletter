@@ -1,6 +1,6 @@
 <?php
 
-namespace Mirko\Newsletter\Tca;
+namespace Mirko\Typo3Newsletter\Tca;
 
 /**
  * Handle bounced emails. Fetch them, analyse them and take approriate actions.

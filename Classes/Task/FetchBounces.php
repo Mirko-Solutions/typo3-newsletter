@@ -1,9 +1,9 @@
 <?php
 
-namespace Mirko\Newsletter\Task;
+namespace Mirko\Typo3Newsletter\Task;
 
-use Mirko\Newsletter\BounceHandler;
-use Mirko\Newsletter\Domain\Repository\BounceAccountRepository;
+use Mirko\Typo3Newsletter\BounceHandler;
+use Mirko\Typo3Newsletter\Domain\Repository\BounceAccountRepository;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;

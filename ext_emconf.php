@@ -1,6 +1,6 @@
 <?php
 
-$EM_CONF['typo3-newsletter'] = [
+$EM_CONF['typo3_newsletter'] = [
     'title' => 'Newsletter',
     'description' => 'Send any pages as Newsletter and provide statistics on opened emails and clicked links.',
     'category' => 'module',

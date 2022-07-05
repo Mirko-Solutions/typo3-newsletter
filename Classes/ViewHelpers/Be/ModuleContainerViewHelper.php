@@ -1,8 +1,8 @@
 <?php
 
-namespace Mirko\Newsletter\ViewHelpers\Be;
+namespace Mirko\Typo3Newsletter\ViewHelpers\Be;
 
-use Mirko\Newsletter\ViewHelpers\AbstractViewHelper;
+use Mirko\Typo3Newsletter\ViewHelpers\AbstractViewHelper;
 
 /**
  * View helper which allows you to create ExtBase-based modules in the style of
@@ -12,7 +12,7 @@ use Mirko\Newsletter\ViewHelpers\AbstractViewHelper;
  * = Examples =
  *
  * <code title="Simple">
- * {namespace newsletter=Ecodev\Newsletter\ViewHelpers}
+ * {namespace newsletter=Mirko\Typo3Newsletter\ViewHelpers}
  * <newsletter:be.container>your additional viewHelpers inside</ext:be.container>
  * </code>
  *
@@ -21,7 +21,7 @@ use Mirko\Newsletter\ViewHelpers\AbstractViewHelper;
  * Default backend CSS styles and JavaScript will be included
  *
  * <code title="All options">
- * {namespace newsletter=Ecodev\Newsletter\ViewHelpers}
+ * {namespace newsletter=Mirko\Typo3Newsletter\ViewHelpers}
  * <newsletter:be.moduleContainer pageTitle="foo">your module content</f:be.container>
  * </code>
  */
@@ -32,6 +32,13 @@ class ModuleContainerViewHelper extends AbstractViewHelper
      */
     protected $escapeOutput = false;
 
+    public function initializeArguments()
+    {
+        parent::initializeArguments();
+
+        $this->registerArgument('pageTitle', 'string', 'Page title', false, '');
+    }
+
     /**
      * Renders start page with template.php and pageTitle.
      *
@@ -41,8 +48,9 @@ class ModuleContainerViewHelper extends AbstractViewHelper
      * @see template
      * @see \TYPO3\CMS\Core\Page\PageRenderer
      */
-    public function render($pageTitle = '')
+    public function render()
     {
+        $pageTitle = $this->arguments['pageTitle'];
         $doc = $this->getDocInstance();
         $this->pageRenderer->backPath = '';
         $this->pageRenderer->loadExtJS();

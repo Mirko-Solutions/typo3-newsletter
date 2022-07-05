@@ -77,7 +77,7 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => \Mirko\Newsletter\Tca\BounceAccountTca::class,
+                'eval' => \Mirko\Typo3Newsletter\Tca\BounceAccountTca::class,
             ],
         ],
         'config' => [
@@ -86,7 +86,7 @@ return [
                 'type' => 'text',
                 'cols' => 40,
                 'rows' => 8,
-                'eval' => \Mirko\Newsletter\Tca\BounceAccountTca::class,
+                'eval' => \Mirko\Typo3Newsletter\Tca\BounceAccountTca::class,
                 'wrap' => 'off',
                 'default' => "poll ###SERVER###\nproto ###PROTOCOL### \nport ###PORT###\nusername \"###USERNAME###\"\npassword \"###PASSWORD###\"\n",
             ],

@@ -1,8 +1,8 @@
 <?php
 
-namespace Mirko\Newsletter\ViewHelpers;
+namespace Mirko\Typo3Newsletter\ViewHelpers;
 
-use Mirko\Newsletter\MVC\ExtDirect\Api;
+use Mirko\Typo3Newsletter\MVC\ExtDirect\Api;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
 
@@ -29,6 +29,10 @@ class ExtDirectProviderViewHelper extends AbstractViewHelper
     {
         $objectManager = GeneralUtility::makeInstance(ObjectManager::class);
         $this->apiService = $objectManager->get(Api::class);
+
+        $this->registerArgument('name', 'string', 'Name', false, 'remoteDescriptor');
+        $this->registerArgument('namespace', 'string', 'Namespace', false, 'Ext.ux.Mirko.Typo3Newsletter.Remote');
+        $this->registerArgument('routeUrl', 'string', 'Route URL', false, null);
     }
 
     /**
@@ -40,10 +44,14 @@ class ExtDirectProviderViewHelper extends AbstractViewHelper
      * @param string $namespace the namespace the variable is placed
      * @param string $routeUrl you can specify a URL that acts as router
      */
-    public function render($name = 'remoteDescriptor', $namespace = 'Ext.ux.Ecodev.Newsletter.Remote', $routeUrl = null)
+    public function render()
     {
+        $name = $this->arguments['name'];
+        $namespace = $this->arguments['namespace'];
+        $routeUrl = $this->arguments['routeUrl'];
+
         if ($routeUrl === null) {
-            $routeUrl = $this->controllerContext->getUriBuilder()->reset()->build() . '&Ecodev\\Newsletter\\ExtDirectRequest=1';
+            $routeUrl = $this->controllerContext->getUriBuilder()->reset()->build() . '&Mirko\\Typo3Newsletter\\ExtDirectRequest=1';
         }
 
         $api = $this->apiService->createApi($routeUrl, $namespace);

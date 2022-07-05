@@ -1,6 +1,6 @@
 <?php
 
-use Mirko\Newsletter\Update\Update;
+use Mirko\Typo3Newsletter\Update\Update;
 
 /**
  * Provide a "update" button in Extension Manager when update are required

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mirko\Newsletter\MVC\ExtDirect;
+namespace Mirko\Typo3Newsletter\MVC\ExtDirect;
 
 use TYPO3\CMS\Extbase\Object\ObjectManagerInterface;
 
